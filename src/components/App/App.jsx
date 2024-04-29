@@ -1,5 +1,6 @@
 import ColorButtons from '../ColorButtons/ColorButtons';
 import Counter from '../Counter/Counter';
+import DirectionButtons from '../DirectionButtons/DirectionButtons';
 import Gradient from '../Gradient/Gradient';
 
 import './App.scss';
@@ -10,7 +11,7 @@ function App() {
       <Counter />
       <ColorButtons />
       <Gradient />
-      <div>directionButtons</div>
+      <DirectionButtons />
     </div>
   );
 }
