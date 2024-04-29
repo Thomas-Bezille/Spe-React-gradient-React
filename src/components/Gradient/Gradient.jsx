@@ -1,7 +1,9 @@
+import { useSelector } from 'react-redux';
+
 const Gradient = () => {
-  const firstColor = '#DE4AF5';
-  const lastColor = '#76FF12';
-  const direction = '90deg';
+  const firstColor = useSelector((state) => state.firstColor);
+  const lastColor = useSelector((state) => state.lastColor);
+  const direction = useSelector((state) => state.direction);
 
   const styleFirstSpan = {
     color: firstColor,
