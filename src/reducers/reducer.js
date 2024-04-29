@@ -1,4 +1,8 @@
-import { CHANGE_FIRST_COLOR, CHANGE_LAST_COLOR } from '../actions/gradient';
+import {
+  CHANGE_DIRECTION,
+  CHANGE_FIRST_COLOR,
+  CHANGE_LAST_COLOR,
+} from '../actions/gradient';
 
 const initialState = {
   firstColor: '#e367a4',
@@ -18,6 +22,11 @@ const reducer = (state = initialState, action = {}) => {
       return {
         ...state,
         lastColor: action.color,
+      };
+    case CHANGE_DIRECTION:
+      return {
+        ...state,
+        direction: action.newDirection,
       };
 
     default:
