@@ -1,5 +1,9 @@
+import { useSelector } from 'react-redux';
+
 const Counter = () => {
-  return <div id="nbColors">5 couleur(s) générée(s)</div>;
+  const nbColorsFromState = useSelector((state) => state.nbColors);
+
+  return <div id="nbColors">{nbColorsFromState} couleur(s) générée(s)</div>;
 };
 
 export default Counter;
