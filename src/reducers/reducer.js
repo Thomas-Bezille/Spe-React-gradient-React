@@ -17,11 +17,13 @@ const reducer = (state = initialState, action = {}) => {
       return {
         ...state,
         firstColor: action.color,
+        nbColors: state.nbColors + 1,
       };
     case CHANGE_LAST_COLOR:
       return {
         ...state,
         lastColor: action.color,
+        nbColors: state.nbColors + 1,
       };
     case CHANGE_DIRECTION:
       return {
